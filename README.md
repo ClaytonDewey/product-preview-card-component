@@ -66,5 +66,5 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Add your name here](https://www.claytondewey.io)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ClaytonDewey)
+- Website - [www.claytondewey.io](https://www.claytondewey.io)
+- Frontend Mentor - [@ClaytonDewey](https://www.frontendmentor.io/profile/ClaytonDewey)
