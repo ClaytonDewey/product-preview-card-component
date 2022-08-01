@@ -1,0 +1,202 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* font-sizes */
+  --fs-200: 1.75rem;
+  --fs-100: 0.875rem;
+  /* font-families */
+  --ff-serif: "Fraunces", serif;
+  --ff-sans-normal: "Montserrat", sans-serif;
+  /* page sizes */
+  --ss-mobile: 21.4375em;
+  --ss-desktop: 37.5em; }
+
+/* colors */
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 500; }
+
+/* set up the body */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f2ebe3;
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-100); }
+
+/* responsive images */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* make form elements easier to work with */
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+/* utility classes */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem); }
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem); }
+
+.flow--space-small {
+  --flow-space: .75rem; }
+
+.text-dark {
+  color: #1c232b; }
+
+.text-accent {
+  color: #6c7289; }
+
+.text-white {
+  color: white; }
+
+.text-dark-cyan {
+  color: #3c8067; }
+
+/* typography */
+.ff-serif {
+  font-family: var(--ff-serif); }
+
+.ff-sans-normal {
+  font-family: var(--ff-sans-normal); }
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.fs-200 {
+  font-size: var(--fs-200); }
+
+.fs-100 {
+  font-size: var(--fs-100); }
+
+.fs-200,
+.fs-100 {
+  line-height: 1.1; }
+
+.strike {
+  text-decoration: line-through; }
+
+/* button */
+.large__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3c8067;
+  width: 100%;
+  height: 2.5rem;
+  font-size: var(--fs-400);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background .25s ease-in-out;
+  margin-top: 1.5rem; }
+
+.large__button > span::before {
+  content: "";
+  background-image: url(../images/icon-cart.svg);
+  background-repeat: no-repeat;
+  margin-right: .75rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block; }
+
+.large__button:hover,
+.large__button:focus {
+  background: #2f6551; }
+
+.large__button:active {
+  background: #244c3d; }
+
+/* page layout */
+.container {
+  max-width: var(--ss-mobile);
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px; }
+
+img.mobile-image {
+  border-radius: 10px 10px 0 0; }
+
+img.desktop-image {
+  display: none; }
+
+.container__body {
+  padding: 1rem;
+  color: #6c7289; }
+
+.container__body h1 {
+  color: #303c4a;
+  font-family: var(--ff-serif); }
+
+.container__body p:last-of-type {
+  margin-block: 1rem;
+  line-height: 1.75; }
+
+@media (min-width: 38em) {
+  .container {
+    display: flex;
+    max-width: var(--ss-desktop); }
+  img.mobile-image {
+    display: none; }
+  img.desktop-image {
+    display: block;
+    border-radius: 10px 0 0 10px;
+    flex: 0 0 50%; }
+  .container__body {
+    flex: 0 0 50%;
+    padding-inline: 2rem; }
+  .container__body p:last-of-type {
+    line-height: 1.6; } }
+
+/* attribution to Frontend Mentor */
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }

@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,24 +20,26 @@
 
   <!-- Preview -->
 
-  <main class="container flow--space-small">
+  <main class="container">
     <div class="container__header">
-      <img class="mobile-image" src="./images/image-product-mobile.jpg" alt="perfume bottle">
-      <img class="desktop-image" src="./images/image-product-desktop.jpg" alt="perfume bottle">
+      <picture>
+        <img class="mobile-image" src="./images/image-product-mobile.jpg" alt="perfume bottle">
+        <img class="desktop-image" src="./images/image-product-desktop.jpg" alt="perfume bottle">
+      </picture>
     </div>
 
     <div class="container__body">
-      <p class="text-accent uppercase letter-spacing-1 fs-200">Perfume</p>
-      <h1 class="ff-serif">Gabrielle Essence Eau De Parfum</h1>
+      <p class="uppercase letter-spacing-1 text-accent">Perfume</p>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
 
-      <p class="text-accent mbl-1">
+      <p>
         A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.
       </p>
 
       <div class="flex">
-        <span class="ff-serif text-dark-cyan fs-700">$149.99</span>
-        <span class="text-accent strike">$169.99</span>
+        <span class="ff-serif text-dark-cyan fs-200">$149.99</span>
+        <span class="strike text-accent">$169.99</span>
       </div>
 
       <a href="#" class="large__button"><span>Add to Cart</span></a>
