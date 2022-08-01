@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://claytondewey.github.io/product-preview-card-component/)
+- Solution URL: [claytondewey.github.io/product-preview-card-component/](https://claytondewey.github.io/product-preview-card-component/)
 
 ## My process
 
