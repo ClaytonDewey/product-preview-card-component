@@ -15,3 +15,6 @@
 .DS_Store
 .prettierignore
 node_modules
+css/style.comp.css
+css/style.concat.css
+css/style.prefix.css
